@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="panel.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="media.css">
+   
+    <style>
+        body{
+            padding: 0 0;
+            margin: 0 0;
+            scroll-behavior: smooth;
+        }
+    </style>
+  </head>
+  <body>
+    
+
+    <div class="sidebar">
+        <div class="hdn-head">
+            <h5><i class="fa-solid fa-user" id="side-logo"></i>&nbsp;Hello, Sign in</h5>
+        </div>
+        <div class="hdn-content">
+            <h5>
+                    Digital content & Devices
+            </h5>
+            <ul>
+                <div>
+                    <li>Amazon Music</li><i class="fa-solid fa-angle-right "></i>
+                </div>
+                <div>
+                    <li>Kindle E-readers & Books</li><i class="fa-solid fa-angle-right "></i>
+                </div>
+                <div>
+                    <li>Amazon Appstore</li><i class="fa-solid fa-angle-right "></i>
+                </div>
+                
+            </ul>
+            <div class="line"></div>
+        </div>
+
+        <div class="hdn-content">
+            <h5>
+                    Shop By Department
+            </h5>
+            <ul>
+                <div>
+                    <li>Electronics</li><i class="fa-solid fa-angle-right "></i>
+                </div>
+                <div>
+                    <li>Computers</li><i class="fa-solid fa-angle-right "></i>
+                </div>
+                <div>
+                    <li>Smartphones</li><i class="fa-solid fa-angle-right "></i>
+                </div>
+                <div>
+                    <li>Arts & Crafts</li><i class="fa-solid fa-angle-right "></i>
+                </div>
+                <div>
+                    <li>See All &nbsp;&nbsp;    <i class="fa-solid fa-angle-down"></i></li>
+                </div>
+                
+            </ul>
+            <div class="line"></div>
+        </div>
+        <div class="hdn-content">
+            <h5>
+                    Programs & Features
+            </h5>
+            <ul>
+                <div>
+                    <li>Gift Cards</li><i class="fa-solid fa-angle-right "></i>
+                </div>
+                <div>
+                    <li>Shop By Interest</li><i class="fa-solid fa-angle-right "></i>
+                </div>
+                <div>
+                    <li>Amazon Live</li><i class="fa-solid fa-angle-right "></i>
+                </div>
+                <div>
+                    <li>International Shoping</li><i class="fa-solid fa-angle-right "></i>
+                </div>
+                <div>
+                    <li>See All &nbsp;&nbsp;    <i class="fa-solid fa-angle-down"></i></li>
+                </div>
+                
+            </ul>
+            <div class="line"></div>
+        </div>
+        <div class="hdn-content">
+            <h5>
+                    Help & Settings
+            </h5>
+            <ul>
+                <div>
+                    <li>Your Account</li>
+                </div>
+                <div>
+                   <li><i class="fa-solid fa-globe"></i>&nbsp;English</li>
+                </div>
+                <div>
+                    <li> <img src="./images/america.jpg" alt="" height="20"width="20"> 
+                        United States</li>
+                </div>
+                <div>
+                    <li>Customer Service</li><i class="fa-solid fa-angle-right "></i>
+                </div>
+                <div><li>Sign in</li></div>
+            </ul>
+
+            
+        </div>
+     </div>
+     <i class="fa-solid fa-xmark" id="xmark"></i>
+     <div class="black"></div>
+    <header>
+        <div class="nav1" id="top1">
+            <div class="nav1-logo  border1">
+                <a href="./index.html"><div class="am-logo">
+                </div></a>
+
+            </div>
+            
+         <div class="nav-add border1 ">
+                
+                
+            <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" style="background: none; border: none;">
+<p class="add-fir">Deliver to</p>
+<div class="add-icon1">
+    <i class="fa-solid fa-location-dot"></i>
+    <p class="add-sec">India </p>
+</div> </button>
+
+<!-- Modal -->
+<div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header mod-header">
+      <h5 class="modal-title mod-title" id="exampleModalLabel">Choose your location</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+    <p id="bod-text">Delivery options and delivery speeds may vary for different locations</p>
+    <div class="mod-btn">
+    <button type="button" class="btn btn-warning">Sign in to see your addresses</button></div>
+    </div>
+    <div class="zipcode">
+      <p id="zipcode">---------------------  or enter a US zip code  ---------------------</p>
+    </div>
+    <div class="input-grp">
+      <div class="input-group input-group-sm mb-3">
+  
+        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+      </div>
+      <button type="button" class="btn btn-light">Apply</button>
+    </div>
+    <div class="dropp">
+      <div class="btn-group">
+        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" data-display="static" aria-expanded="false">
+          Ship outside the US
+        </button>
+        <div class="dropdown-menu dropdown-menu-lg-right">
+          <button class="dropdown-item" type="button">Australia</button>
+          <button class="dropdown-item" type="button">India action</button>
+          <button class="dropdown-item" type="button">China</button>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer mod-footer">
+      <button type="button middle" class="done">Done</button>
+    </div>
+  </div>
+</div>
+</div>
+        </div>
+            <div class="nav-search">
+                <select class="search-select">
+                    <option value="">All</option>
+                </select>
+                <input class="search-input" placeholder="Search Amazon">
+                <div class="search-icon"> <i class="fa-solid fa-magnifying-glass"></i></div>
+
+            </div>
+            
+          <div class="signj border1">
+            <span>Hello, Sign in</span>
+            <div class="flex-ac">
+                <span>Account & Lists</span>
+
+                <i class="fa fa-caret-down" aria-hidden="true"></i>
+            
+
+                 
+                </div>
+
+                <div class="triangle">
+
+                </div>
+
+                
+                <div class="hdn-sign">
+                        <div class="btn-cont">
+                        <a href="./signin.html"><button id="sign-btn">Sign in</button></a>
+                        <div id="Text">
+                            
+                            <p>New Customer?</p><span>Start here</span></div>
+                        </div>
+                    <div class="hdn-table">
+                        <div>
+                            <h3>Your Lists</h3>
+                            <ul>
+                                <li>Create a List</li>
+                                <li>Create a List</li>
+                                <li>Find a List or Registry</li>
+                
+                            </ul>
+                        </div>
+                        <div class="hdn-line">
+                        </div>
+                        <div>
+                            <h3>Your Account</h3>
+                            <ul>
+                                <li>Account</li>
+                                <li>orders</li>
+            <li>Recommendations</li>
+            <li>Browsing History</li>
+            <li>Watchlist</li>
+            <li>Video Purchases & Rentals</li>
+            <li>Kindle Ulimited</li>
+            <li>content & Devices</li>
+            <li>Subscribe & Save Items</li>
+            <li>Memberships & Subscription</li>
+            <li>Music Library</li>
+ 
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        
+            
+            <div class="nav-return border1">
+                <p class="nav-retp"><span>Returns</span></p>
+                <p>& orders</p>
+            </div>
+            <div class="nav-cart border1">
+                <i class="fa-solid fa-cart-shopping"></i> Cart
+            </div>
+        </div>
+        <div class="panel panel-color">
+            <div class="panel-all">
+
+                <i class="fa fa-bars" id="side" aria-hidden="true"></i>
+
+
+
+                All
+            </div>
+            <div class="panel-opt">
+                <a href="./today's_deals.html"><p>Today's Deals</p></a>
+                <a href="#"><p>Customer Service</p></a>
+               <a href="./Registry.html"> <p>Registry</p></a>
+                <a href="#"><p>Gift Cards</p></a>
+                <a href="#"><p>Sell</p></a>
+            </div>
+            <!-- <div class="panel-deals">
+                Shop deals in Electronics
+            </div> -->
+        </div>
+
+       
+    </header>
+    <!-- nav-header section -->
+    <div class="nav-header">
+        <div class="cs-title">
+          <p>Customer Service</p>
+    
+        </div>
+        <div class="hom">
+     <p>Home</p>
+        </div>
+        <div class="digi">
+            <p>Digital Services and Device Support</p>
+            
+        </div>
+    </div>
+    <!-- hero banner section -->
+    <div class="hero-banner">
+        <div class="page-container">
+            <div class="head-para">
+            <h1 class="p-heading" style="color: white;">Welcome to Amazon Customer Service</h1>
+            <p id="p-para" style="color: white;">
+                What would you like help with today? You can quickly take care of most things here, or connect with us when needed.
+            </p>
+        </div>
+        <!-- card section -->
+            <div class="card-container">
+
+                <div class="cardd">
+                    <img src="./images/ser-img1.png" alt="">
+                    <p>A delivery, order or return</p>
+                </div>
+                <div class="cardd">
+                    <img src="./images/ser-img2.png" alt="">
+                    <p>Prime</p>
+                </div>
+                <div class="cardd">
+                    <img src="./images/ser-img3.png" alt="">
+                    <p>Payment, charges or gift cards</p>
+                </div>
+                <div class="cardd">
+                    <img src="./images/ser-img4.png" alt="">
+                    <p>Address, security & privacy</p>
+                </div>
+                <div class="cardd">
+                    <img src="./images/ser-img5.png" alt="">
+                    <p>Memberships, Subscription or communications</p>
+                </div>
+                <div class="cardd">
+                    <img src="./images/ser-img6.png" alt="">
+                    <p>Kindle, Fire, Alexa or other Amazon devices</p>
+                </div>
+                <div class="cardd">
+                    <img src="./images/ser-img7.png" alt="">
+                    <p>eBooks, Prime Videos, Music or Games</p>
+                </div>
+                <div class="cardd">
+                    <img src="./images/ser-img8.png" alt="">
+                    <p>Accessibility</p>
+                </div>
+                <div class="cardd">
+                    <img src="./images/ser-img9.png" alt="">
+                    <p>Something else</p>
+                </div>
+                <div class="cardd">
+                    <img src="./images/ser-img10.png" alt="">
+                    <p>Login & password</p>
+                </div>
+                <div class="cardd">
+                    <img src="./images/ser-img11.png" alt="">
+                    <p>Report Something Suspicious</p>
+                </div>
+            </div>
+        </div> 
+    </div>
+    <!-- search bar section -->
+    <div class="container2">
+        <div class="h-bar" style="font-weight: 600;">
+        <h1>Search our help library</h1>
+        
+    
+    <div class="input-bar">
+        
+        <div class="iconn"> <i class="fa-solid fa-magnifying-glass"></i></div>
+        <input class="search-input " id="shado" placeholder="Type something like, &quot;question about a charge&quot">
+    </div> 
+    </div>
+</div>
+<!-- main section -->
+      <div class="main">
+     <div class="help-container">
+        <h2>All help topics</h2>
+        <div class="helptopics">
+            
+                <li>
+                    <div class="bx">
+                        Take Quick Actions
+                    </div>
+                </li>
+                <li>Where's my stuff</li>
+                <li>Shipping and Delevery</li>
+                <li>Returns, Refunds and Product Support</li>
+                <li>Managing your Account</li>
+                <li>Security & Privacy</li>
+                <li>Payment, Pricing and Promotions</li>
+                <li>Devices & Digital Solutions</li>
+                <li>Amazon Business Accounts </li>
+                <li>Large Items and Heavy-Bulky Services</li>
+                <li>Other topics & Help sites</li>
+                
+            
+        </div>
+     </div>
+
+       <div class="right-box">
+        <div class="bocx">
+         <h4 >Track your package</h4>
+        <span class="sp"> Track your packages in Your Orders.</span>
+        </div>
+        <div class="bocx">
+         <h4 >Return Items You Ordered</h4>
+        <span class="sp"> Return your orders using our Online Return Center</span>
+        </div>
+        <div class="bocx">
+         <h4 >Check status of a refund</h4>
+        <span class="sp">Track your return and refunds in Your Orders</span>
+        </div>
+        <div class="bocx">
+         <h4 >Update Your Password</h4>
+        <span class="sp"> Update your password in Your account</span>
+        </div>
+        <div class="bocx">
+         <h4 >Amazon Prime</h4>
+        <span class="sp">Get detailed information on all Prime benefits.</span>
+        </div>
+        <div class="bocx">
+         <h4 >End Your Amazon Prime Membership</h4>
+        <span class="sp">Cancel your membership easily via this page.</span>
+        </div>
+
+       </div>
+    </div>
+    
+    <footer>
+        <div class="foot-panel1">
+           <a href="#top1">Back to Top</a> 
+        </div>
+        <div class="foot-panel2">
+            <ul>
+                <p>Get to Know Us </p>
+                <a href="#">Careers</a>
+                <a href="#">Blog</a>
+                <a href="#">About Amazon</a>
+                <a href="#">Investor Relations</a>
+                <a href="#">Amazon Devices</a>
+                <a href="#">Amazon Science</a>
+                
+            </ul>
+            <ul>
+                <p>Make Money with Us </p>
+                <a href="#">Sell products on Amazon</a>
+                <a href="#">Sell apps on Amazon</a>
+                <a href="#">an Affiliate</a>
+                <a href="#">Advertise Your Products</a>
+                <a href="#">Self-Publish with Us</a>
+                <a href="#">Host an Amazon Hub</a>
+                
+            </ul>
+            <ul>
+                <p>Amazon Payment Products </p>
+                <a href="#">Amazon Business Card</a>
+                <a href="#">Shop with Points</a>
+                <a href="#">Reload Your Balance</a>
+                <a href="#">Amazon Currency Converter</a>
+                
+                
+            </ul>
+      
+            <ul>
+                <p>Let Us Help You </p>
+                <a href="#">Amazon and COVID-19</a>
+                <a href="#">Your Account</a>
+                <a href="#">Your Orders</a>
+                <a href="#">Shipping Rates &amp; Policies</a>
+                <a href="#">Returns &amp; Replacements</a>
+                <a href="#">Manage Your Content and Devices</a>
+                <a href="#">Amazon Assistant</a>
+                <a href="#">Help</a>
+                
+            </ul>
+      
+      
+        </div>
+       
+        <div class="foot-panel3">
+            <div class="logo"></div>
+        </div>
+        <div class="foot-panel4">
+            <div class="pages">
+                <a href="#">Condition of Use</a>
+                <a href="#">Privacy Notice</a>
+                <a href="#">Your Ads Privacy Choices</a>
+            </div>
+            <div class="copyright">
+                © 1996-2023, Amazon.com, Inc. or its affiliates
+            </div>
+        </div>
+      </footer>
+    
+    
+    <script src="./scriptmy.js"></script>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
