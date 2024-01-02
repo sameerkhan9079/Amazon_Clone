@@ -198,6 +198,9 @@
 
 }
 @media all and (max-width:320px){
+    .phone-container{
+        height:auto;
+    }
     .nav-add{ 
     width: 76px;
     padding: 0;
