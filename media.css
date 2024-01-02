@@ -181,7 +181,7 @@
 
 }
 @media all and (max-width:395px){
-    .phone-container{
+    .text-container{
         height:auto;
     }
     .panel-opt{
@@ -201,7 +201,7 @@
 
 }
 @media all and (max-width:320px){
-    .phone-container{
+    .text-container{
         height:auto;
     }
     .nav-add{ 
