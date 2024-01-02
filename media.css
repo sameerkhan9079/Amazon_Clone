@@ -181,6 +181,9 @@
 
 }
 @media all and (max-width:395px){
+    .phone-container{
+        height:auto;
+    }
     .panel-opt{
         padding-top: 4px;
     }
