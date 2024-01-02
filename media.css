@@ -9,7 +9,7 @@
     }
     .nav-add p,.fa-location-dot,
     .fa-magnifying-glass,
-     .caret-down{
+     .fa-caret-down{
         font-size: 0.7rem;
     }
 
@@ -67,7 +67,7 @@
     .nav1{
         height: 43px;
     }
-    .nav-add p,.fa-location-dot, .caret-down,
+    .nav-add p,.fa-location-dot, .fa-caret-down,
     .fa-magnifying-glass
     {
         font-size: 0.5rem;
@@ -141,7 +141,7 @@
     .search-input{
         font-size: 0.4rem;
     }
-    .signj span,.fa-location-dot, .caret-down{
+    .signj span,.fa-location-dot, .fa-caret-down{
         font-size: 0.4rem;
     
     }
@@ -184,22 +184,37 @@
     .panel-opt{
         padding-top: 4px;
     }
+    .signj .flex-ac{
+        width: 60px;
+        margin: -4px 0;
+        padding: 0 4px;
+    }
+    .nav-add{
+        width: 64px;
+    }
+    .nav-return{
+        width: 30px;
+    }
+
 }
 @media all and (max-width:320px){
     .nav-add{ 
-    width: 15%;
-   gap: 5px;
+    width: 76px;
+    padding: 0;
+    margin: 0;
 }
 .nav-add p{
     font-size: 0.5rem;
 }
+
 .signj span{
     font-size: 0.4rem;
 }
 .signj .flex-ac {
     display: flex;
     justify-content: center;
-    padding: 10px 3px;
+    padding: 4px 5px;
+    gap: 1px;
     
 }
 .flex-ac span{
@@ -208,6 +223,9 @@
 }
 .nav-return p{
     font-size: 0.4rem;
+    padding: 0;
+    width: 25px;
+
 }
 
 .panel p {
@@ -216,6 +234,10 @@
 .panel-all{
     width: 13%;
 
+}
+.nav-search{
+    height: 18px;
+    width: 35%;
 }
 }
 @media all and (max-width:391px){
