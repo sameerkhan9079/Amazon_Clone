@@ -183,6 +183,7 @@
 @media all and (max-width:395px){
     .text-container{
         height:auto;
+        line-height:1rem;
     }
     .panel-opt{
         padding-top: 4px;
